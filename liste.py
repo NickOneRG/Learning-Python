@@ -58,3 +58,35 @@ Elementni indeksi yordamida ilib tashlash uchun del operatoridan foydalanamiz:
 
 del mevalar[1]      # 2-element (anjir) ni o`chirib tashlaymiz.
 print(mevalar)
+
+"""
+Elementlarning qiymati bo`yicha o`chirish uchun esa .remove(qiymat) metodidan foydalanamiz.
+Buning uchun qavs ichida o`chirib tashlash kerak bo`lgan qiymatni yozamiz.
+"""
+
+mevalar.remove('shaftoli')   # Ro`yxatdan shaftolini o`chirdik
+print(mevalar)
+
+"""
+.remove(qiymat) metodi ro`yxatda uchragan birinchi mos keluvchi qiymatni o`chiradi.
+Agar ro`yxatning ichida 2 va undan ko`p bir xil qiymatli elementlar bo`lsa, ulardan faqat birinchisi o`chadi.
+"""
+
+print("\n")
+
+hayvonlar = ['it', 'mushuk', 'sigir', 'quyon', 'mushuk']
+hayvonlar.remove('mushuk')
+print(hayvonlar)
+
+print("\n")
+
+"""
+             Elementni sug`urib olish
+Bazida biror elementni butunlay o`chirib tashlash emas, balki uni ro`yxatdan sug`urib olib, foydalanish talab qilinadi.
+Buning uchun Pythonda .pop() metodidan foydalanamiz.
+"""
+
+bozorlik = ['yog`', 'un', 'piyoz', 'banan', 'go`sht']
+mahsulot = bozorlik.pop(3)  # 4-elementni sug`urib olamiz
+print("Men " + mahsulot + " sotib oldim")
+print("Olinmagan mahsulotlar: ", bozorlik)
